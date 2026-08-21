@@ -1,0 +1,15 @@
+# Ignore raw sequencing data and alignments
+*.sra
+*.fastq
+*.fastq.gz
+*.sam
+*.bam
+*.bai
+data/
+
+# Ignore local system/IDE files
+.Rproj.user/
+.RData
+.Rhistory
+__pycache__/
+.ipynb_checkpoints/
