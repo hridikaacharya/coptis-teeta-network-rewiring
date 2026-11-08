@@ -50,8 +50,8 @@ test <- fisher.test(matrix)
 
 print(test)
 
-###Although most robust network hubs were distinct from stress-induced rewiring
-###genes, their overlap was significantly enriched compared with random 
+###Most robust network hubs were distinct from stress-induced rewiring
+###genes. However, their overlap was significantly enriched compared with random 
 ###expectation (Fisher's exact test, odds ratio = 7.17, p = 0.038), suggesting 
 ###that a subset of highly connected genes may act as structural regulators of 
 ###stress-driven network remodeling.
