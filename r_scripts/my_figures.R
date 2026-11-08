@@ -1,6 +1,6 @@
 # ============================================================
 # Coptis teeta Preliminary Findings
-# Figure Generation Script
+# Figure Script
 # ============================================================
 
 
