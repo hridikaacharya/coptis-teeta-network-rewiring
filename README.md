@@ -4,7 +4,7 @@
 
 *Coptis teeta* is an endangered medicinal plant endemic to the Eastern Himalayas. It is an abundant natural source of the isoquinoline alkaloids berberine and coptisine.
 
-Through this study, we look into gene co-expression patterns that differ between drought and heat stress in *C. teeta*.  First, we independently reprocessed the RNA-seq data published by Nath et al. (2026) . Then, we created stress-specific co-expression networks and quantified changes in gene connectivity to find candidate genes associated with stress-responsive network reorganization.
+Through this study, we look into gene co-expression patterns that differ between drought and heat stress in *C. teeta*.  First, we independently reprocessed the RNA-seq data published by Nath et al. (2026). Then, we created stress-specific co-expression networks and quantified changes in gene connectivity to find candidate genes associated with stress-responsive network reorganization.
 
 The analysis uses biweight midcorrelation (bicor) which is outlier resistant, network centrality, multi-threshold robustness assessment, and an integrated candidate-prioritization framework.
 
@@ -14,7 +14,7 @@ The study is intended as a hypothesis-generating investigation. Network associat
 
 1. How do transcriptional responses differ between drought and heat stress?
 2. Which genes exhibit the greatest changes in co-expression network connectivity between the two conditions?
-3. Which candidate genes remain consistently across different correlation thresholds and scoring schemes?
+3. Which candidate genes remain consistent across different correlation thresholds and scoring schemes?
 4. Do independently reported annotations and sequence homology provide functional support for the prioritized candidates?
 
 ## Methodology
@@ -44,17 +44,17 @@ We classified the genes according to their stress-response patterns. A total of 
 
 ### 3. Co-expression network construction
 
-We quantified the gene co-expression using biweight midcorrelation (bicor), implemented through the WGCNA package in R.
+We quantified the gene co-expression using biweight midcorrelation (bicor) with maxPOutliers = 0.10, implemented through the WGCNA package in R.
 
 We created two drought-specific and heat-specific networks. We then defined the network edges using correlation thresholds, and quantified gene connectivity via degree centrality.
 
 ### 4. Network rewiring analysis
 
-We assessed the Stress-dependent network reorganization from the absolute difference in degree centrality between drought and heat networks:
+We assessed the stress-dependent network reorganization from the absolute difference in degree centrality between drought and heat networks:
 
 `Degree_Difference = |Drought_Degree - Heat_Degree|`
 
-We estimated that genes with larger differences exhibit greater changes in network connectivity between the two stress conditions.
+We considered that genes with larger differences exhibit greater changes in network connectivity between the two stress conditions.
 
 ### 5. Robust hub identification
 
